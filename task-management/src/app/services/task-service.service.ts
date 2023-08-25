@@ -4,6 +4,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class TaskService {
+
   private tasks: any[] = [];
 
   getTasks(): any[] {
@@ -14,5 +15,11 @@ export class TaskService {
     this.tasks.push(item);
   }
 
-  constructor() {}
+  updateTaskStatus(name:string): void {
+    
+  }
+
+  constructor() {
+
+  }
 }

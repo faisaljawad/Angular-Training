@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TaskService } from 'src/app/services/task-service.service';
 import { MatTableDataSource } from '@angular/material/table';
-import { MatInputModule } from '@angular/material/input';
 
 @Component({
   selector: 'app-list',
@@ -10,8 +9,8 @@ import { MatInputModule } from '@angular/material/input';
 })
 export class ListComponent implements OnInit {
   tasks: any;
-  dataSource : any;
-  displayedColumns: string[] = ['name', 'priority'];
+  dataSource: any;
+  displayedColumns: string[] = ['name', 'priority', 'status', 'action'];
   constructor(private taskService: TaskService) {}
 
   ngOnInit() {
@@ -21,5 +20,12 @@ export class ListComponent implements OnInit {
 
   getTasks(): any {
     return this.taskService.getTasks();
+  }
+
+  markAsDone(name: string) {
+    const taskToUpdate = this.tasks.find((task: any) => task.name === name);
+    if (taskToUpdate) {
+      taskToUpdate.status = 'completed';
+    }
   }
 }

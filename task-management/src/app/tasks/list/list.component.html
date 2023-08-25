@@ -9,6 +9,18 @@
       <mat-header-cell *matHeaderCellDef>Priority</mat-header-cell>
       <mat-cell *matCellDef="let task">{{ task.priority }}</mat-cell>
     </ng-container>
+    <ng-container matColumnDef="status">
+        <mat-header-cell *matHeaderCellDef>Status</mat-header-cell>
+        <mat-cell *matCellDef="let task">{{ task.status }}</mat-cell>
+      </ng-container>
+    <ng-container matColumnDef="action">
+      <mat-header-cell *matHeaderCellDef>Action</mat-header-cell>
+      <mat-cell *matCellDef="let task">
+        <button mat-icon-button [disabled]="task.status=='completed'" (click)="markAsDone(task.name)">
+          <mat-icon>done</mat-icon>
+        </button>
+      </mat-cell>
+    </ng-container>
 
     <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
     <mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
