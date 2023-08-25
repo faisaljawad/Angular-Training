@@ -1,0 +1,82 @@
+/* Add the following styles to your component's CSS file */
+
+/* Style for the main container */
+.content-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the form fields */
+.mat-form-field {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+/* Style for the form labels */
+.mat-form-field-label {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Style for the input fields */
+.mat-input-element {
+  font-size: 16px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Style for the select dropdown */
+.mat-select {
+  width: 100%;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+/* Style for the buttons */
+button.mat-raised-button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+/* Style for the header */
+header {
+  background-color: #1976d2;
+  color: #fff;
+}
+
+/* Style for the footer */
+footer {
+  margin-top: 20px;
+  text-align: center;
+  color: #666;
+}
+
+/* Center align the form and its content */
+.centered-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Add margin to the button for spacing */
+.centered-form button {
+  margin-top: 16px;
+}
+
+.home-link {
+  display: flex;
+  align-items: center;
+}
+
+/* Optional: Add spacing between icon and text */
+.home-link mat-icon {
+  margin-right: 8px;
+}

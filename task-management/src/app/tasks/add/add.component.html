@@ -1,0 +1,42 @@
+<main>
+  <header>
+    <mat-toolbar color="primary">
+      <a mat-icon-button [routerLink]="'/'" class="home-link">
+        <mat-icon style="vertical-align: middle">home</mat-icon>
+        <span style="vertical-align: middle"> Home </span>
+      </a>
+    </mat-toolbar>
+  </header>
+
+  <div class="content-container">
+    <h2 class="mat-h2" class="centered-form">Add New Task</h2>
+    <form (ngSubmit)="onSubmit()" class="centered-form">
+      <mat-form-field>
+        <input
+          matInput
+          placeholder="Task Name"
+          [(ngModel)]="newTaskName"
+          name="newTaskName"
+          required
+        />
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Priority</mat-label>
+        <mat-select
+          [(ngModel)]="selectedPriority"
+          name="selectedPriority"
+          required
+        >
+          <mat-option value="high">High</mat-option>
+          <mat-option value="medium">Medium</mat-option>
+          <mat-option value="low">Low</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <button mat-raised-button color="primary" type="submit">Add Task</button>
+    </form>
+  </div>
+
+  <footer>
+    <!-- Footer content goes here -->
+  </footer>
+</main>

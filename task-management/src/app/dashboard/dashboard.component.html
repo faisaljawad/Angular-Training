@@ -1,0 +1,27 @@
+<main>
+  <header>
+    <mat-toolbar color="primary">
+      <a mat-icon-button [routerLink]="'/'">
+        <mat-icon>home</mat-icon> <span> Home </span>
+      </a>
+    </mat-toolbar>
+  </header>
+
+  <div class="content-container">
+    <div class="button-container">
+      <button mat-raised-button color="accent" routerLink="/add-task">
+        <mat-icon>add</mat-icon> Add New Task
+      </button>
+    </div>
+
+    <mat-divider class="divider"></mat-divider>
+
+    <div class="task-list-container">
+      <app-list></app-list>
+    </div>
+  </div>
+
+  <footer>
+    <!-- Footer content goes here -->
+  </footer>
+</main>

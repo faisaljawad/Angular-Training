@@ -1,0 +1,48 @@
+/* Style for the main container */
+.content-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the list items */
+.mat-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 10px 0;
+}
+
+/* Style for the task name */
+.task-name {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Style for the task priority */
+.task-priority {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Style for the header */
+header {
+  background-color: #1976d2;
+  color: #fff;
+}
+
+/* Style for the footer */
+footer {
+  margin-top: 20px;
+  text-align: center;
+  color: #666;
+}
+
+/* Adjust spacing and margin for a cleaner look */
+main {
+  padding: 20px;
+}
