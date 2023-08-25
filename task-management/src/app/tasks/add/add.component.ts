@@ -19,6 +19,7 @@ export class AddComponent {
         name: this.newTaskName,
         priority: this.selectedPriority,
         status: 'pending',
+        created_at: Date.now()
       };
       this.taskService.addTask(task); // Use your service's addData method
       this.newTaskName = ''; // Clear the input field

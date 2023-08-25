@@ -10,7 +10,7 @@ import { MatTableDataSource } from '@angular/material/table';
 export class ListComponent implements OnInit {
   tasks: any;
   dataSource: any;
-  displayedColumns: string[] = ['name', 'priority', 'status', 'action'];
+  displayedColumns: string[] = ['name', 'priority', 'status', 'created_at', 'action'];
   constructor(private taskService: TaskService) {}
 
   ngOnInit() {
