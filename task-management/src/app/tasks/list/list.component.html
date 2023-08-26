@@ -6,8 +6,8 @@
       <mat-cell *matCellDef="let task">{{ task.name }}</mat-cell>
     </ng-container>
     <ng-container matColumnDef="priority">
-      <mat-header-cell *matHeaderCellDef>Priority</mat-header-cell>
-      <mat-cell *matCellDef="let task">{{ task.priority }}</mat-cell>
+      <mat-header-cell *matHeaderCellDef >Priority</mat-header-cell>
+      <mat-cell *matCellDef="let task" appHighlight [appHighlight]="task.priority">{{ task.priority }}</mat-cell>
     </ng-container>
     <ng-container matColumnDef="status">
         <mat-header-cell *matHeaderCellDef>Status</mat-header-cell>

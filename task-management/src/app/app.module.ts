@@ -13,12 +13,15 @@ import { MatIconModule } from '@angular/material/icon';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { MatListModule } from '@angular/material/list';
 import { MatTableModule } from '@angular/material/table';
+import { HighlightDirective } from './directives/highlight/highlight.directive';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
-    ListComponent
+    ListComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
