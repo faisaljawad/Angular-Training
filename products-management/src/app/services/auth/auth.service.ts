@@ -30,8 +30,8 @@ export class AuthService {
     } else {
       // Make the login API call to obtain the access token
       this.login({
-        username: 'your-username',
-        password: 'your-password',
+        username: 'john@mail.com',
+        password: 'changeme',
       }).subscribe(
         (response: any) => {
           if (response.access_token) {
